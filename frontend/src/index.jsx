@@ -5,6 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./routes/error-page";
 import Root from "./routes/root";
 import Home from "./routes/home";
+import Profile from "./routes/profile";
+import Communeaute from "./routes/communeaute";
+import Reglages from "./routes/reglages";
 
 const router = createBrowserRouter([
   {
@@ -18,17 +21,22 @@ const router = createBrowserRouter([
         element: <Home />,
         errorElement: <ErrorPage />,
       },
-      // {
-      //   path: "logements/:logementId",
-      //   element: <Logement />,
-      //   loader: logementLoader,
-      //   errorElement: <ErrorPage />,
-      // },
-      // {
-      //   path: "about",
-      //   element: <About />,
-      //   errorElement: <ErrorPage />,
-      // },
+      {
+        path: "profile/:profileId",
+        element: <Profile />,
+        // loader: logementLoader,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "communeaute",
+        element: <Communeaute />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "reglages",
+        element: <Reglages />,
+        errorElement: <ErrorPage />,
+      },
     ],
   },
 ]);

@@ -7,9 +7,9 @@ export default function Root() {
     <>
       <Header />
       <main>
+        <Sidebar />
         <Outlet />
       </main>
-      <Sidebar />
     </>
   );
 }
