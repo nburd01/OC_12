@@ -1,8 +1,8 @@
 // frontend/src/App.js
 
 import React, { useEffect, useState } from "react";
-import "./App.css";
-import { fetchUserData } from "./services/services";
+import "../App.css";
+import { fetchUserData } from "../services/services";
 
 function App() {
   const [user, setUser] = useState(null);
